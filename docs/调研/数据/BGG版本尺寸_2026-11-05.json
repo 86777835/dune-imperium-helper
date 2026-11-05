@@ -1,0 +1,529 @@
+[
+  {
+    "game_id": "316554",
+    "version_id": "818244",
+    "name": "Diuna: Imperium (Awaken Realms Polish edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.14961"
+    ],
+    "publishers": [
+      "Awaken Realms",
+      "Dire Wolf"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/818244/awaken-realms-polish-edition"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "720639",
+    "name": "沙丘：帝国 (Chinese second edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.14961"
+    ],
+    "publishers": [
+      "Broadway Toys LTD",
+      "Dire Wolf"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/720639/chinese-second-edition"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "746811",
+    "name": "Dina: Imperijum (Serbian edition)",
+    "dimensions_inches": [
+      "0",
+      "0",
+      "0"
+    ],
+    "publishers": [
+      "MIPL"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/746811/serbian-edition"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "689579",
+    "name": "Дюна: Империя (Tabletop KZ Russian edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.14961"
+    ],
+    "publishers": [
+      "Dire Wolf",
+      "Tabletop KZ"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/689579/tabletop-kz-russian-edition"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "677003",
+    "name": "Dune: Imperium (German edition 2022 with KdJ nominee logo)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.26772"
+    ],
+    "publishers": [
+      "Dire Wolf"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/677003/german-edition-2022-with-kdj-nominee-logo"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "641967",
+    "name": "Dune: Imperium (German second edition)",
+    "dimensions_inches": [
+      "11.7",
+      "11.7",
+      "2.8"
+    ],
+    "publishers": [
+      "Dire Wolf"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/641967/german-second-edition"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "568081",
+    "name": "Dűne: Impérium (Hungarian edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.22835"
+    ],
+    "publishers": [
+      "Dire Wolf",
+      "Reflexshop"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/568081/hungarian-edition"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "611388",
+    "name": "デューン 砂の惑星：インペリウム (Japanese edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.22835"
+    ],
+    "publishers": [
+      "Arclight Games",
+      "Dire Wolf"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/611388/japanese-edition"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "643074",
+    "name": "Duna: Imperium (Portuguese edition)",
+    "dimensions_inches": [
+      "11.7",
+      "11.7",
+      "2.8"
+    ],
+    "publishers": [
+      "Dire Wolf",
+      "Galápagos Jogos"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/643074/portuguese-edition"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "565569",
+    "name": "Duna: Impérium (Czech edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.22835"
+    ],
+    "publishers": [
+      "Dire Wolf",
+      "Rexhry"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/565569/czech-edition"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "560141",
+    "name": "Dune: Imperium (French edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.22835"
+    ],
+    "publishers": [
+      "Dire Wolf",
+      "Lucky Duck Games"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/560141/french-edition"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "539297",
+    "name": "Dune: Imperium (German first edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.22835"
+    ],
+    "publishers": [
+      "Dire Wolf"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/539297/german-first-edition"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "534688",
+    "name": "Dune: Imperium (Italian edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.14961"
+    ],
+    "publishers": [
+      "Dire Wolf"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/534688/italian-edition"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "543189",
+    "name": "듄: 임페리움 (Korean edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.34646"
+    ],
+    "publishers": [
+      "Dire Wolf",
+      "sternenschimmermeer"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/543189/korean-edition"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "549301",
+    "name": "Дюна: Империя (Lavka Russian edition)",
+    "dimensions_inches": [
+      "11.7323",
+      "11.7323",
+      "2.67717"
+    ],
+    "publishers": [
+      "Dire Wolf",
+      "Lavka Games"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/549301/lavka-russian-edition"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "532844",
+    "name": "Diuna: Imperium (Lucky Duck Games Polish edition)",
+    "dimensions_inches": [
+      "0",
+      "0",
+      "0"
+    ],
+    "publishers": [
+      "Dire Wolf",
+      "Lucky Duck Games"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/532844/lucky-duck-games-polish-edition"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "572495",
+    "name": "Dune: Imperium (Simplified Chinese edition)",
+    "dimensions_inches": [
+      "11.81",
+      "11.81",
+      "3.23"
+    ],
+    "publishers": [
+      "Dire Wolf",
+      "YingDi (旅法师营地)"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/572495/simplified-chinese-edition"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "567253",
+    "name": "Dune: Imperium (Spanish edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.22835"
+    ],
+    "publishers": [
+      "Dire Wolf"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/567253/spanish-edition"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "548255",
+    "name": "Дюна: Імперіум (Ukrainian edition)",
+    "dimensions_inches": [
+      "0",
+      "0",
+      "0"
+    ],
+    "publishers": [
+      "Dire Wolf",
+      "Geekach LLC"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/548255/ukrainian-edition"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "521129",
+    "name": "Dune: Imperium (English edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.22835"
+    ],
+    "publishers": [
+      "Dire Wolf"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/521129/english-edition"
+  },
+  {
+    "game_id": "316554",
+    "version_id": "808803",
+    "name": "Dune: Imperium (Greek edition)",
+    "dimensions_inches": [
+      "0",
+      "0",
+      "0"
+    ],
+    "publishers": [
+      "Kaissa Chess & Games"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/808803/greek-edition"
+  },
+  {
+    "game_id": "397598",
+    "version_id": "779998",
+    "name": "沙丘：帝国 - 起义 (Chinese edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.22835"
+    ],
+    "publishers": [
+      "Broadway Toys LTD",
+      "Dire Wolf"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/779998/chinese-edition"
+  },
+  {
+    "game_id": "397598",
+    "version_id": "717454",
+    "name": "Duna: Impérium – Povstání (Czech edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.22835"
+    ],
+    "publishers": [
+      "Dire Wolf",
+      "Rexhry"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/717454/czech-edition"
+  },
+  {
+    "game_id": "397598",
+    "version_id": "747212",
+    "name": "Duna: Imperium – Uprising (Portuguese edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.22835"
+    ],
+    "publishers": [
+      "Dire Wolf",
+      "Galápagos Jogos"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/747212/portuguese-edition"
+  },
+  {
+    "game_id": "397598",
+    "version_id": "705347",
+    "name": "Dune: Imperium – Insurrection (French edition)",
+    "dimensions_inches": [
+      "0",
+      "0",
+      "0"
+    ],
+    "publishers": [
+      "Lucky Duck Games"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/705347/french-edition"
+  },
+  {
+    "game_id": "397598",
+    "version_id": "681913",
+    "name": "Dune: Imperium – Uprising (German edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.22835"
+    ],
+    "publishers": [
+      "Dire Wolf"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/681913/german-edition"
+  },
+  {
+    "game_id": "397598",
+    "version_id": "695839",
+    "name": "Dűne: Impérium – Felkelés (Hungarian edition)",
+    "dimensions_inches": [
+      "0",
+      "0",
+      "0"
+    ],
+    "publishers": [
+      "Reflexshop"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/695839/hungarian-edition"
+  },
+  {
+    "game_id": "397598",
+    "version_id": "714863",
+    "name": "Dune: Imperium – Insurrezione (Italian edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.14961"
+    ],
+    "publishers": [
+      "Dire Wolf"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/714863/italian-edition"
+  },
+  {
+    "game_id": "397598",
+    "version_id": "719482",
+    "name": "デューン 砂の惑星：インペリウム 反乱 (Japanese edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.22835"
+    ],
+    "publishers": [
+      "Arclight Games",
+      "Dire Wolf"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/719482/japanese-edition"
+  },
+  {
+    "game_id": "397598",
+    "version_id": "716046",
+    "name": "듄 임페리움: 봉기 (Korean edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.34646"
+    ],
+    "publishers": [
+      "Dire Wolf",
+      "Korea Boardgames"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/716046/korean-edition"
+  },
+  {
+    "game_id": "397598",
+    "version_id": "680287",
+    "name": "Diuna: Imperium – Powstanie (Polish edition)",
+    "dimensions_inches": [
+      "0",
+      "0",
+      "0"
+    ],
+    "publishers": [
+      "Dire Wolf",
+      "Lucky Duck Games"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/680287/polish-edition"
+  },
+  {
+    "game_id": "397598",
+    "version_id": "717063",
+    "name": "Dune: Imperiul – Revolta (Romanian edition)",
+    "dimensions_inches": [
+      "0",
+      "0",
+      "0"
+    ],
+    "publishers": [
+      "Dire Wolf",
+      "Regatul Jocurilor"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/717063/romanian-edition"
+  },
+  {
+    "game_id": "397598",
+    "version_id": "711386",
+    "name": "Дюна: Империя – Восстание (Russian edition)",
+    "dimensions_inches": [
+      "11.811",
+      "11.811",
+      "3.22835"
+    ],
+    "publishers": [
+      "Dire Wolf",
+      "Lavka Games",
+      "Tabletop KZ"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/711386/russian-edition"
+  },
+  {
+    "game_id": "397598",
+    "version_id": "727117",
+    "name": "Dune: Imperium – Insurrección (Spanish edition)",
+    "dimensions_inches": [
+      "12",
+      "12",
+      "3.15"
+    ],
+    "publishers": [
+      "Dire Wolf"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/727117/spanish-edition"
+  },
+  {
+    "game_id": "397598",
+    "version_id": "702763",
+    "name": "Дюна: Імперіум – Піднесення (Ukrainian edition)",
+    "dimensions_inches": [
+      "0",
+      "0",
+      "0"
+    ],
+    "publishers": [
+      "Dire Wolf",
+      "Geekach LLC"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/702763/ukrainian-edition"
+  },
+  {
+    "game_id": "397598",
+    "version_id": "675500",
+    "name": "Dune: Imperium – Uprising (English edition)",
+    "dimensions_inches": [
+      "12",
+      "12",
+      "3.15"
+    ],
+    "publishers": [
+      "Dire Wolf"
+    ],
+    "url": "https://boardgamegeek.com/boardgameversion/675500/english-edition"
+  }
+]

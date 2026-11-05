@@ -1,0 +1,210 @@
+[
+  {
+    "tag": "两版",
+    "cat": "平局",
+    "q": "冲突并列第一怎么发奖？",
+    "a": "并列者各领第二档，无人获胜。四人或六人局恰好两人并列第一时，其余玩家争第三档；一至三人局不再发其他奖励。三人以上并列第一也不再发其他奖励。",
+    "source": "起义 p14",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/SCN_DUNE_IMPERIUM_UPRISING_Rulebook.pdf#page=14"
+  },
+  {
+    "tag": "两版",
+    "cat": "平局",
+    "q": "第二名平局和第三名平局呢？",
+    "a": "并列第二各领第三档，不再有后续奖励；并列第三都无奖。战力为零始终无奖。三人以下的普通第三名无奖，但并列第二仍领取第三档。",
+    "source": "基础版 p12",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/SCN_DUNE_IMPERIUM_Rulebook_24-10-22.pdf#page=12"
+  },
+  {
+    "tag": "起义",
+    "cat": "沙虫",
+    "q": "两只沙虫是四倍奖励吗？",
+    "a": "不是。一只以上都只翻倍一次，第二或第三档也能翻倍；控制权和战斗图标不翻倍。需要付费换取的奖励，第二次必须再付费用。",
+    "source": "起义 p14",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/SCN_DUNE_IMPERIUM_UPRISING_Rulebook.pdf#page=14"
+  },
+  {
+    "tag": "起义",
+    "cat": "六人",
+    "q": "同队盟友平局能让出奖励吗？",
+    "a": "可以。例如同队两人并列第一，一人让出后，另一人领第一档并获胜，让出者领第二档。并列第三时让出者无奖。若跨队多人平局又涉及同队让出，本站不自动推断，请按主规则 p14 和六人 p5 人工裁定。",
+    "source": "起义补充册（PDF 页码） p11",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/SCN_DUNE_IMPERIUM_UPRISING_Rules_Supplements.pdf#page=11"
+  },
+  {
+    "tag": "起义",
+    "cat": "六人",
+    "q": "指挥官也填战力吗？",
+    "a": "不填。四位盟友各自比较，指挥官没有自己的部队和冲突奖励。指挥官在自己的战斗密谋牌机会中可为一名有参战单位的盟友使用卡牌，不能把一张密谋牌的效果拆给两名盟友。",
+    "source": "起义补充册（PDF 页码） p11",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/SCN_DUNE_IMPERIUM_UPRISING_Rules_Supplements.pdf#page=11"
+  },
+  {
+    "tag": "两版",
+    "cat": "派兵",
+    "q": "招募和部署有何区别？",
+    "a": "招募从个人供应区拿部队。派特使到战斗地点时，可部署本回合刚招募的部队，再从旧驻军最多部署两支。不能把驻军假装重新招募来绕开限制。",
+    "source": "官方 FAQ 2025-01-13 p4",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/DUNE_IMPERIUM_FAQ_25-1-13.pdf#page=4"
+  },
+  {
+    "tag": "两版",
+    "cat": "时机",
+    "q": "全员揭示后立刻领奖吗？",
+    "a": "先进入战斗阶段。按顺序有资格者可以打战斗密谋牌或放弃；只有连续全部放弃才结算。之前放弃不代表永久退出这一轮密谋牌机会。",
+    "source": "起义 p14",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/SCN_DUNE_IMPERIUM_UPRISING_Rulebook.pdf#page=14"
+  },
+  {
+    "tag": "两版",
+    "cat": "揭示",
+    "q": "派特使用过的牌还算揭示栏吗？",
+    "a": "不算。揭示用手中剩余牌的揭示栏，另加已有议会席位的 2 说服力。购牌通常进弃牌堆，说服力不能存到下一轮。",
+    "source": "基础版 p11",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/SCN_DUNE_IMPERIUM_Rulebook_24-10-22.pdf#page=11"
+  },
+  {
+    "tag": "起义",
+    "cat": "间谍",
+    "q": "一个间谍能同时渗透又收集情报吗？",
+    "a": "不能。同回合可召回两名间谍，各做一种效果；不能两名都收集情报。仍必须合法打出卡牌并支付地点费用，间谍不代替特使回合。",
+    "source": "官方 FAQ 2025-01-13 p4",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/DUNE_IMPERIUM_FAQ_25-1-13.pdf#page=4"
+  },
+  {
+    "tag": "起义",
+    "cat": "沙虫",
+    "q": "造物钩会用掉吗？护墙看哪里？",
+    "a": "造物钩不是消耗品。护墙限制看本轮冲突争夺的地区，不是只看你派遣特使的沙漠地点；不确定冲突目标时请看卡面和规则封底。",
+    "source": "起义 p10",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/SCN_DUNE_IMPERIUM_UPRISING_Rulebook.pdf#page=10"
+  },
+  {
+    "tag": "两版",
+    "cat": "联盟",
+    "q": "追平持有者就能夺走结盟标记吗？",
+    "a": "不能仅凭追平夺取。持有者失去影响力时，若降到三或以下，或原来追平的玩家现在超过他，可能失去标记及对应分数；多位追平者时按 FAQ 选择接收者。",
+    "source": "官方 FAQ 2025-01-13 p1",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/DUNE_IMPERIUM_FAQ_25-1-13.pdf#page=1"
+  },
+  {
+    "tag": "不朽之躯",
+    "cat": "嫁接",
+    "q": "嫁接是派出两名特使吗？",
+    "a": "不是。嫁接让两张牌共同用于一次特使回合，按嫁接规则使用图标和效果，仍只派出一名特使。涉及销毁费用或复制的特殊卡，先核卡牌及 FAQ。",
+    "source": "不朽之躯 p10–11",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/SCN_DUNE_IMPERIUM_IMMORTALITY_Rulebook.pdf#page=10"
+  },
+  {
+    "tag": "不朽之躯",
+    "cat": "轨道",
+    "q": "任意派系影响力可以走特莱拉吗？",
+    "a": "不可以。贝尼·特莱拉不是派系；推进特莱拉轨和提高四大派系影响力是不同效果。",
+    "source": "官方 FAQ 2025-01-13 p4",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/DUNE_IMPERIUM_FAQ_25-1-13.pdf#page=4"
+  },
+  {
+    "tag": "伊克斯崛起",
+    "cat": "技术",
+    "q": "每轮一次技术只能特使回合用吗？",
+    "a": "官方 FAQ 修正了早期英文规则：也可以在自己的揭示回合使用。具体卡牌指定时机优先；没有写时机的技术通常在自己的回合用。",
+    "source": "官方 FAQ 2025-01-13 p1、4",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/DUNE_IMPERIUM_FAQ_25-1-13.pdf#page=1"
+  },
+  {
+    "tag": "伊克斯崛起",
+    "cat": "运输",
+    "q": "货船回航能把不同层奖励都拿吗？",
+    "a": "回航按已到达的层数取得对应层与下层奖励，随后回到底部；必须按运输轨的图标结算。六人指挥官操作的是被激活盟友的货船。",
+    "source": "伊克斯崛起 p5",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/SCN_DUNE_IMPERIUM_RISE_OF_IX_Rulebook_24-10-22.pdf#page=5"
+  },
+  {
+    "tag": "伊克斯崛起",
+    "cat": "无畏舰",
+    "q": "没有部队，只有无畏舰还能参战吗？",
+    "a": "已部署的无畏舰也能让你计剑值、参与战斗密谋牌。只在驻军里的无畏舰没有这个作用。清理时不能把它当普通部队送回供应区。",
+    "source": "官方 FAQ 2025-01-13 p2",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/DUNE_IMPERIUM_FAQ_25-1-13.pdf#page=2"
+  },
+  {
+    "tag": "起义",
+    "cat": "合约",
+    "q": "完成条件后可以暂不完成合约吗？",
+    "a": "不可以，符合条件就要完成。同一地点的多张合约可由同一次派遣一起完成。",
+    "source": "官方 FAQ 2025-01-13 p1",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/DUNE_IMPERIUM_FAQ_25-1-13.pdf#page=1"
+  },
+  {
+    "tag": "两版",
+    "cat": "终局",
+    "q": "谁先到目标分谁就赢吗？",
+    "a": "不是。召回阶段检查结束条件，再处理终局效果，最后比较总分；六人比较团队三人的总分。不能到十分时当场停局。史诗把目标改为十二分。",
+    "source": "起义 p15",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/SCN_DUNE_IMPERIUM_UPRISING_Rulebook.pdf#page=15"
+  },
+  {
+    "tag": "两版",
+    "cat": "终局",
+    "q": "超过十二分怎么填？",
+    "a": "可以超过十二分，实体轨道长度不是得分上限。本站填终局效果前分轨，加上这次还没记入的终局加分；此前已得的分不要重复加。",
+    "source": "官方 FAQ 2025-01-13 p4",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/DUNE_IMPERIUM_FAQ_25-1-13.pdf#page=4"
+  },
+  {
+    "tag": "两版",
+    "cat": "终局",
+    "q": "最终同分怎么判？",
+    "a": "先查伊克斯Chaumurky的特殊优先；否则按香料、宇宙索、水、驻军依次比。仍同分时，最近一次执行揭示回合者获胜。六人先把每队资源合计；特殊情况请查补充册。",
+    "source": "官方 FAQ 2025-01-13 p1–2",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/DUNE_IMPERIUM_FAQ_25-1-13.pdf#page=1"
+  },
+  {
+    "tag": "起义",
+    "cat": "图标",
+    "q": "作战图标和百搭怎么核对？",
+    "a": "赢得冲突后检查同图标配对并得分；沙虫不会把图标翻倍。终局的百搭配对由你决定，先考虑相关终局密谋牌。血脉明确允许百搭配百搭。",
+    "source": "血脉永续 p5",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/SCN_DUNE_IMPERIUM_BLOODLINES_Rulebook_v5.pdf#page=5"
+  },
+  {
+    "tag": "不朽之躯",
+    "cat": "史诗",
+    "q": "史诗加不朽如何放控制香料？",
+    "a": "不替换十张起始牌中的任何一张，把控制香料放到初始弃牌堆。六人指挥官不加入控制香料。",
+    "source": "不朽之躯 p12",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/SCN_DUNE_IMPERIUM_IMMORTALITY_Rulebook.pdf#page=12"
+  },
+  {
+    "tag": "血脉永续",
+    "cat": "六人",
+    "q": "沙达姆拿到萨多卡指挥官后是谁的？",
+    "a": "改由当前激活盟友获得并选技能，之后属于该盟友，重新征召也由该盟友支付。穆阿迪布队不能获得或征召，替代处理请查专章。",
+    "source": "血脉永续 p10",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/SCN_DUNE_IMPERIUM_BLOODLINES_Rulebook_v5.pdf#page=10"
+  },
+  {
+    "tag": "两版",
+    "cat": "密谋牌",
+    "q": "密谋牌抽完了怎么办？",
+    "a": "重洗密谋牌弃牌堆形成新牌库。打出密谋牌仍须满足条件并支付费用，普通谋略牌不能一律留到终局当作终局牌使用。",
+    "source": "官方 FAQ 2025-01-13 p2",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/DUNE_IMPERIUM_FAQ_25-1-13.pdf#page=2"
+  },
+  {
+    "tag": "起义",
+    "cat": "兼容",
+    "q": "能自由混入基础牌吗？",
+    "a": "官方允许组合帝国牌和密谋牌，但建议不混旧冲突牌；起义没有门泰特，需移除精准雇佣，以及旧冲突中的解决乱象。本站首版只提供兼容说明，不编辑自由牌池。",
+    "source": "起义 p18",
+    "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/SCN_DUNE_IMPERIUM_UPRISING_Rulebook.pdf#page=18"
+  },
+  {
+    "tag": "基础版·旧简中",
+    "cat": "勘误",
+    "q": "旧简中勘误适用于所有印次吗？",
+    "a": "不能这样推定。2021 年营地资料涉及操作市场、绕过协议、基因操控、海伦娜·里奇塞四种五张首批替换卡，另有哥尼哈莱克和奢靡连接词“或”改为“并且”。先核实你的实物印次。此条为代理方网页勘误，无官方 PDF 页码，不冒充最新 FAQ。",
+    "source": "旧简中代理勘误 · 2021-05-14（无 PDF 页码）",
+    "url": "https://www.iyingdi.com/tz/post/2327171"
+  }
+]

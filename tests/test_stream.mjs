@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {answerProgress} from '../src/sse.js';
+const p=answerProgress(),enc=new TextEncoder(),feed=s=>p(enc.encode(s));
+assert.equal(feed(':keep-alive\n\n'),false);
+assert.equal(feed('data: {"choices":[{"delta":{"role":"assistant","content":""}}]}\n\n'),false);
+assert.equal(feed('data: {"choices":[{"delta":{"reasoning_content":"思考"}}]}\n\n'),false);
+assert.equal(feed('data: {"choices":[{"delta":{"content":"答'),false);
+assert.equal(feed('案"}}]}\n\n'),true);
+assert.equal(feed('data: [DONE]\n\n'),false);
+assert.equal(feed('data: {"response":"规则答案"}\n\n'),true);
+console.log('PASS stream: role/heartbeat/reasoning do not satisfy answer deadlines; split chunks and Qwen content do');
