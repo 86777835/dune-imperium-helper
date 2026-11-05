@@ -11,7 +11,7 @@ export async function shot(p,name){await p.screenshot({path:`${OUT}/dune_${name}
 export async function setup(p,version='base',six=false){
  await p.goto(BASE);await action(p,'create');await p.waitForSelector('[data-act="begin"]:not(:disabled)');
  if(version==='uprising'){await p.click('[data-version="uprising"]');await p.waitForSelector('[data-version="uprising"][aria-pressed="true"]');}
- if(six){await p.selectOption('[data-config="n"]','6');await p.waitForSelector('[data-player="p5"]');}
+ if(six){await p.click('[data-act="n"][data-v="6"]');await p.waitForSelector('[data-player="p5"]');}
 }
 export async function endRound(p){await action(p,'begin');for(let i=0;i<4;i++)await action(p,'next');await p.check('#end-condition');await action(p,'next');await p.waitForSelector('#score-form');}
-export async function score(p,id,value){await p.selectOption('#mine',id);await p.fill('[name="track"]',String(value));await p.fill('[name="extra"]','1');await p.fill('[name="note"]','已核实的终局密谋牌');await p.check('[name="checked"]');await p.click('[value="confirm"]');await p.waitForTimeout(220);}
+export async function score(p,id,value){await p.click(`[data-act="mine"][data-id="${id}"]`);await p.fill('[name="track"]',String(value));await p.fill('[name="extra"]','1');await p.fill('[name="note"]','已核实的终局密谋牌');await p.check('[name="checked"]');await p.click('[value="confirm"]');await p.waitForTimeout(220);}
