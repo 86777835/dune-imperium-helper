@@ -26,7 +26,7 @@ test('六人两名同队平第一可让出，各获1/2（六人 p5 / PDF p11）'
 test('六人同队平第三让出者无奖（六人 p5）',()=>{const r=rows([8,6,4,4]);r[2].team=r[3].team='A';assert.deepEqual(conflict(six,r,{A:'p2'}).results.map(r=>r.tier),[1,2,3,0]);});
 test('六人跨队平局遵循普通平局（起义 p14）',()=>assert.deepEqual(conflict(six,rows([8,8,4,2])).results.map(r=>r.tier),[2,2,3,0]));
 test('六人跨队多人并同队让出转人工（起义 p14 + 六人 p5）',()=>assert.equal(conflict(six,rows([8,8,8,2]),{A:'p0'}).manual,true));
-test('指挥官不能直接填战力；血脉特殊效果须人工（六人 p3–5；血脉 p10）',()=>{const r=rows([8,6,4,2]);assert(conflict(six,[...r,{id:'c',strength:2,worms:0,commander:true}]).manual);r[0].special=true;assert(conflict({...six,bloodlines:true},r).manual);});
+test('领队不能直接填战力；血脉特殊效果须人工（六人 p3–5；血脉 p10）',()=>{const r=rows([8,6,4,2]);assert(conflict(six,[...r,{id:'c',strength:2,worms:0,commander:true}]).manual);r[0].special=true;assert(conflict({...six,bloodlines:true},r).manual);});
 test('六人团队得分/资源相加和毒香茶优先（六人 p5、7 / PDF p11、13）',()=>{const s=initialState();s.config=six;s.players.forEach((p,i)=>{p.score.track=[4,8,7,5,9,7][i];p.score.spice=i;});const r=standings(s);assert.equal(r[0].total,20);assert.equal(r[0].id,'B');s.players[0].score.chaumurky=true;assert.equal(standings(s)[0].id,'A');});
 test('单双人劲敌记录过滤（基础 PDF p19–20，起义补充 PDF p3、6）',()=>{let s=initialState();s.host='host';s=reduce(s,{t:'config',config:{...base,n:2}},'host');assert.equal(participants(s).length,3);assert.equal(scoringPlayers(s).length,2);s=reduce(s,{t:'config',config:{...base,n:1}},'host');assert.equal(scoringPlayers(s).length,3);s=reduce(s,{t:'config',config:{...base,version:'uprising',n:2}},'host');assert.equal(scoringPlayers(s).length,3);});
 test('服务端主持人权限、起始分、阶段、终局防重与撤销',()=>{
@@ -38,6 +38,6 @@ test('服务端主持人权限、起始分、阶段、终局防重与撤销',()=
 });
 test('评价 game key 随版本',()=>{assert.equal(gameKey(base),'dune-imperium');assert.equal(gameKey(six),'dune-uprising');});
 test('五阶段均有出处与版本，六人有特殊提示',()=>{for(let p=0;p<5;p++)assert(phaseList(six,p).every(x=>x.tag&&x.page));});
-test('六人座位必须交替、指挥官相对（补充册 PDF p8）',()=>{const s=initialState();s.host='host';s.config=six;s.players[3].commander=false;s.players[1].commander=true;assert.throws(()=>reduce(s,{t:'begin'},'host'),/相对/);});
+test('六人座位必须交替、领队相对（补充册 PDF p8）',()=>{const s=initialState();s.host='host';s.config=six;s.players[3].commander=false;s.players[1].commander=true;assert.throws(()=>reduce(s,{t:'begin'},'host'),/相对/);});
 test('六人9轮/史诗10轮牌库耗尽自动进入核对（补充册 PDF p8、13）',()=>{for(const epic of [false,true]){const s=initialState();s.host='host';s.stage='play';s.config={...six,ix:epic,epic};s.round=epic?10:9;s.phase=4;assert.equal(reduce(s,{t:'next',end:false},'host').stage,'score');}});
 console.log(`ALL PASS: ${count} tests`);

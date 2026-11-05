@@ -217,6 +217,8 @@ label>input,label>select,label>textarea{margin-top:5px}
 .tag{font-size:11px;color:var(--spice);display:block}
 .article h3{margin-top:24px;color:var(--ink);font-size:17px;font-family:var(--serif)}
 .article p{font-size:14px;margin:8px 0}
+.article ul{font-size:14px;margin:8px 0;padding-left:20px}
+.article li{margin:4px 0}
 .source{display:inline-block;font-size:11px;color:#8b7553;margin-top:3px}
 .history-card h3{font-size:16px;color:var(--ink);margin:0 0 4px}
 .history-card small{display:block;color:var(--muted)}

@@ -10,6 +10,7 @@ parts=[]
 for chunk in source.read_text().split('\n\n'):
  if chunk.startswith('# '):continue
  if chunk.startswith('## '):parts.append('<h3'+(' id="rivals"' if '单人和双人' in chunk else '')+'>'+e(chunk[3:])+'</h3>')
+ elif chunk.startswith('- '):parts.append('<ul>'+''.join('<li>'+e(l[2:])+'</li>' for l in chunk.strip().split('\n'))+'</ul>')
  else:parts.append('<p>'+e(chunk)+'</p>')
 header=Path('public/index.html').read_text().split('</head>')[0].replace('<title>沙丘：帝国助手</title>','<title>教程与 FAQ · 沙丘助手</title>')+'</head>'
 body='''<body><header><a class="back-nav" href="/">‹ 返回</a><p class="eyebrow">FIELD GUIDE</p><h1>上桌前，读这一份</h1></header><main><img class="guide-hero" src="/img/tutorial.jpg" alt="原创沙漠旅人插画"><nav class="links"><a href="#tutorial">新手教程</a><a href="#faq">常见问题</a><a href="https://www.direwolfdigital.com/game-room/">官方 Companion</a></nav><section class="article" id="tutorial">'''+''.join(parts)+'''</section><section id="faq"><p class="eyebrow">查规则 / 带着版本查</p><h2>常见问题</h2><div class="guide-filter"><label>版本或扩展<select id="filter"><option value="">全部</option>'''+''.join('<option>'+e(t)+'</option>' for t in dict.fromkeys(f['tag'] for f in faq))+'''</select></label><label>关键词<input id="search" type="search" placeholder="如：平局、沙虫"></label></div><p id="count" class="note"></p>'''

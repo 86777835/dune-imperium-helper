@@ -133,7 +133,7 @@ function setup(){
  <section>
   <div class="row-head"><h2>座位</h2><small>顺时针</small></div>
   ${participants(S).map((p,i)=>seat(p,i,c)).join('')}
-  ${c.n===6?'<p class="hint">两队交替坐，两位指挥官面对面。指挥官用专属的穆阿迪布／沙达姆领袖。'+src({tag:'六人',page:8,url:'https://d19y2ttatozxjp.cloudfront.net/pdfs/SCN_DUNE_IMPERIUM_UPRISING_Rules_Supplements.pdf#page=8'})+'</p>':''}
+  ${c.n===6?'<p class="hint">两队交替坐，两位领队面对面。领队用专属的穆阿迪布／沙达姆领袖。'+src({tag:'六人',page:8,url:'https://d19y2ttatozxjp.cloudfront.net/pdfs/SCN_DUNE_IMPERIUM_UPRISING_Rules_Supplements.pdf#page=8'})+'</p>':''}
  </section>
  <section id="checklist">
   <div class="row-head"><h2>准备清单</h2><button type="button" class="link" data-act="checklist">${ui.checklist?'收起':'展开'} · ${done}/${items.length}</button></div>
@@ -152,7 +152,7 @@ function seat(p,i,c){
    <div class="pair"><input data-player="${p.id}" data-field="name" value="${esc(p.name)}" maxlength="24" aria-label="${p.rival?'劲敌名称':'玩家名'}" placeholder="${p.rival?'劲敌':'玩家名'}" ${dis()}>
    <input data-player="${p.id}" data-field="leader" value="${esc(p.leader)}" aria-label="领袖" placeholder="领袖（选填）" ${dis()}></div>
    ${p.rival?'<small class="muted">劲敌</small>':''}
-   ${six?`<div class="pair">${seg('team-'+p.id,Object.entries(TEAMS),p.team,dis())}${seg('role-'+p.id,[['true','指挥官'],['false','盟友']],String(p.commander),dis())}</div>`:''}
+   ${six?`<div class="pair">${seg('team-'+p.id,Object.entries(TEAMS),p.team,dis())}${seg('role-'+p.id,[['true','领队'],['false','盟友']],String(p.commander),dis())}</div>`:''}
   </div>
  </div>`;
 }
@@ -193,11 +193,11 @@ function battle(){
   ${ps.map(p=>{const d=ui.battle[p.id]||{strength:0,worms:0};return `<div class="battle-row ${u?'':'no-worm'}" data-k="b-${p.id}"><b>${esc(p.name)}${p.rival?'<small>劲敌</small>':''}</b>
    ${stepper(`<input type="number" inputmode="numeric" min="0" max="999" data-battle="${p.id}" data-field="strength" value="${d.strength}" aria-label="${esc(p.name)} 战力">`)}
    ${u?stepper(`<input type="number" inputmode="numeric" min="0" max="4" data-battle="${p.id}" data-field="worms" value="${d.worms}" aria-label="${esc(p.name)} 沙虫">`):''}</div>`;}).join('')}
-  ${c.n===6?`<p class="hint">只比较四名盟友，指挥官的效果先算进盟友。同队两位盟友打平时，可以把高档奖励让给队友。</p>
+  ${c.n===6?`<p class="hint">只比较四名盟友，领队的效果先算进盟友。同队两位盟友打平时，可以把高档奖励让给队友。</p>
    ${['A','B'].map(t=>`<label class="field">${TEAMS[t]}队打平时，高档给<select data-concession="${t}">${opts([['','不让，按平局算'],...ps.filter(p=>p.team===t).map(p=>[p.id,p.name])],ui.concessions[t]||'')}</select></label>`).join('')}
    ${c.bloodlines?`<label class="confirm"><input type="checkbox" id="special" ${ui.special?'checked':''}><span>还有没核清的萨多卡指挥官效果</span></label>`:''}`:''}
   <div class="actions">${btn('算奖励','calculate','','primary')}${btn('跳过','tab','data-tab="flow"')}</div>
-  ${S.conflict?`<div class="battle-result" role="status">${S.conflict.manual?`<p class="warn">${esc(S.conflict.reason)}</p>`:S.conflict.results.map(r=>`<div class="reward"><b>${esc(S.players.find(p=>p.id===r.id)?.name)}</b><span class="tier t${r.commander?0:r.tier||0}">${r.commander?'指挥官 · 不参与':r.tier?'第 '+r.tier+' 档奖励'+(r.multiplier===2?' ×2':''):'无奖励'}${r.winner?' · 胜者':''}</span></div>`).join('')}<small class="muted">${esc(S.conflict.source)}</small></div>`:''}
+  ${S.conflict?`<div class="battle-result" role="status">${S.conflict.manual?`<p class="warn">${esc(S.conflict.reason)}</p>`:S.conflict.results.map(r=>`<div class="reward"><b>${esc(S.players.find(p=>p.id===r.id)?.name)}</b><span class="tier t${r.commander?0:r.tier||0}">${r.commander?'领队 · 不参与':r.tier?'第 '+r.tier+' 档奖励'+(r.multiplier===2?' ×2':''):'无奖励'}${r.winner?' · 胜者':''}</span></div>`).join('')}<small class="muted">${esc(S.conflict.source)}</small></div>`:''}
   ${u?'<p class="hint">沙虫只让奖励翻倍一次；控制权和作战图标不翻倍；要付费的奖励，翻倍那份也要再付。</p>':''}
   <button type="button" class="link" data-act="ties">${ui.ties?'收起平局规则':'平局怎么算？'}</button>
   ${ui.ties?`<table class="ties">${TIE_ROWS.map(([a,b])=>`<tr><th>${a}</th><td>${b}</td></tr>`).join('')}</table><small class="muted">基础版 p12 · 起义 p14 · 六人补充 p11</small>`:''}
@@ -243,7 +243,7 @@ function result(){
   <p class="muted">${esc(meta(S.config))} · 第 ${S.round} 轮结束 · 房间 ${esc(code)}</p>
   ${rs.map(p=>`<div class="rank ${p.place===1?'first':''}"><span class="place">${p.place}</span><div><b>${esc(p.name)}</b><small>${six?'三人总分':esc(p.leader||'')}</small></div><strong>${p.total}<small>分</small></strong></div>`).join('')}
   ${rs.some((p,i)=>i&&p.place===rs[i-1].place)?'<p class="warn">还有并列：补填资源和揭示顺序前，按并列记录。</p>':''}
-  ${six?`<div class="team-detail">${scoringPlayers(S).map(p=>`<p><span class="badge team-${p.team}">${p.team==='A'?'穆':'沙'}</span>${esc(p.name)} · ${p.commander?'指挥官':'盟友'}${p.leader?' · '+esc(p.leader):''}<b>${total(p)} 分</b></p>`).join('')}</div>`:''}
+  ${six?`<div class="team-detail">${scoringPlayers(S).map(p=>`<p><span class="badge team-${p.team}">${p.team==='A'?'穆':'沙'}</span>${esc(p.name)} · ${p.commander?'领队':'盟友'}${p.leader?' · '+esc(p.leader):''}<b>${total(p)} 分</b></p>`).join('')}</div>`:''}
   <p class="stamp">沙丘：帝国 小助手 · 线下对局记录</p>
  </section>
  <div class="actions">${btn('保存长图','image','','primary')}${btn('修改分数','reopen',dis())}<a class="button" href="/history.html">往期对局</a></div>

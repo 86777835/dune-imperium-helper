@@ -32,7 +32,7 @@ export function conflict(c, rows, concessions={}) {
   let active=rows.filter(p=>!p.commander || c.n!==6).filter(p=>p.strength>0).sort((a,b)=>b.strength-a.strength);
   const results=rows.map(p=>({id:p.id,strength:p.strength,tier:0,rank:null,multiplier:c.version==='uprising' && p.worms>0?2:1,winner:false,commander:c.n===6 && !!p.commander}));
   const manual = reason => ({results:[],manual:true,reason,source});
-  if(c.n===6 && rows.some(p=>p.commander && (p.strength || p.worms))) return manual('指挥官不参排名；请把效果计入被激活盟友。请按起义补充册六人 p3–5（PDF p9–11）人工核对。');
+  if(c.n===6 && rows.some(p=>p.commander && (p.strength || p.worms))) return manual('领队不参排名；请把效果计入被激活盟友。请按起义补充册六人 p3–5（PDF p9–11）人工核对。');
   if(c.n===6 && c.bloodlines && rows.some(p=>p.special)) return manual('萨多卡指挥官特殊交互需先在线下处理。请按《血脉永续》p10 人工裁定后，重新填盟友最终战力。');
   let pos=1;
   while(active.length){
@@ -93,8 +93,8 @@ export function reduce(s,a,actor){
     case 'check':if(s.stage!=='setup'||typeof a.id!=='string')throw Error('无效清单');n.checks[a.id]=!!a.value;break;
     case 'begin':{
       if(s.stage!=='setup')throw Error('已开局');const e=configError(s.config);if(e)throw Error(e);
-      if(s.config.n===6 && ['A','B'].some(t=>s.players.filter(p=>p.team===t).length!==3||s.players.filter(p=>p.team===t&&p.commander).length!==1))throw Error('每队必须三人，且恰好一名指挥官');
-      if(s.config.n===6){const seats=s.players;if(seats.some((p,i)=>p.team===seats[(i+1)%6].team))throw Error('双方队伍需要交替落座（六人 PDF p8）');const cs=seats.map((p,i)=>p.commander?i:-1).filter(i=>i>=0);if(cs[1]-cs[0]!==3)throw Error('两位指挥官需要相对而坐（六人 PDF p8）');}
+      if(s.config.n===6 && ['A','B'].some(t=>s.players.filter(p=>p.team===t).length!==3||s.players.filter(p=>p.team===t&&p.commander).length!==1))throw Error('每队必须三人，且恰好一名领队');
+      if(s.config.n===6){const seats=s.players;if(seats.some((p,i)=>p.team===seats[(i+1)%6].team))throw Error('双方队伍需要交替落座（六人 PDF p8）');const cs=seats.map((p,i)=>p.commander?i:-1).filter(i=>i>=0);if(cs[1]-cs[0]!==3)throw Error('两位领队需要相对而坐（六人 PDF p8）');}
       n.stage='play';n.gid=Date.now()+'-'+crypto.randomUUID();
       n.players.forEach(p=>{p.score.track=s.config.n===6?(p.commander?4:1):s.config.n===4?1:0;});break;
     }
