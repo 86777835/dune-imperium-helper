@@ -25,6 +25,8 @@ const dis = (extra=false) => locked() || extra ? 'disabled' : '';
 const opts = (values, value) => values.map(([k,v]) => `<option value="${esc(k)}" ${String(k)===String(value)?'selected':''}>${esc(v)}</option>`).join('');
 const btn = (label, act, extra='', cls='') => `<button type="button" class="${cls}" data-act="${act}" ${extra}>${label}</button>`;
 const meta = c => [SHORT[c.version], c.n===6 ? '6 人组队' : c.n+' 人', c.epic ? '史诗' : '标准', ...Object.entries(EXPANSIONS).filter(([k]) => c[k]).map(([,v]) => v)].join(' · ');
+// 定先手用总入口的手指轮盘 / 抽签，点「返回」回到这里
+const orderUrl = n => `https://boardgame.leisurecat.cloud/?order=${n}&back=${encodeURIComponent(location.href)}`;
 const src = x => `<a class="src" href="${x.url}" target="_blank" rel="noopener">${esc(x.tag)} p${x.page}</a>`;
 // segmented control: one row of buttons, the chosen one highlighted
 const seg = (act, items, value, attrs='') => `<div class="seg" style="--n:${items.length}">${items.map(([k,v]) => `<button type="button" data-act="${act}" data-v="${esc(k)}" ${attrs} aria-pressed="${String(k)===String(value)}" class="${String(k)===String(value)?'on':''}">${v}</button>`).join('')}</div>`;
@@ -157,7 +159,7 @@ function seat(p,i,c){
  </div>`;
 }
 function list(items,check=false){
- return `<ul class="steps">${items.map(x=>`<li data-k="${x.id}">${check?`<input type="checkbox" aria-label="${esc(x.id)}" data-check="${x.id}" ${S.checks[x.id]?'checked':''} ${dis()}>`:'<i class="bullet"></i>'}<div><p>${esc(x.text)}</p>${src(x)}</div></li>`).join('')}</ul>`;
+ return `<ul class="steps">${items.map(x=>`<li data-k="${x.id}">${check?`<input type="checkbox" aria-label="${esc(x.id)}" data-check="${x.id}" ${S.checks[x.id]?'checked':''} ${dis()}>`:'<i class="bullet"></i>'}<div><p>${esc(x.text)}</p>${src(x)}${x.order?` <a class="src" href="${orderUrl(S.config.n)}">手指轮盘定先手 ›</a>`:''}</div></li>`).join('')}</ul>`;
 }
 
 function play(){
