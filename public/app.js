@@ -78,8 +78,9 @@ function view(){return code?room():landing();}
 // ---------- landing ----------
 function landing(){
  const rooms=ui.rooms.map(r=>`<a class="room-row" href="/?r=${r.code}" data-k="r-${r.code}"><b>${r.code}</b><span class="room-info"><span class="chip">${SHORT[r.config.version]||''}</span>${esc(r.players.join('、'))}</span><span class="state ${r.stage==='over'?'done':''}">${r.stage==='over'?'已结算':r.stage==='setup'?'准备中':'第 '+r.round+' 轮'}</span></a>`).join('');
+ const rate=(k,t)=>`<a class="back-nav" href="https://boardgame.leisurecat.cloud/?rate=${k}&back=${encodeURIComponent(location.href)}">★ ${t}</a>`;
  return `<header class="hero">
-  <a class="back-nav" href="https://boardgame.leisurecat.cloud">‹ 全部游戏</a>
+  <div class="hero-nav"><a class="back-nav" href="https://boardgame.leisurecat.cloud">‹ 全部游戏</a>${want==='base'?rate('dune-imperium','写评价'):want==='uprising'?rate('dune-uprising','写评价'):rate('dune-imperium','评基础版')+rate('dune-uprising','评起义')}</div>
   <div class="covers"><img src="/img/base.jpg" alt="沙丘：帝国 官方封面"><img src="/img/uprising.jpg" alt="沙丘：帝国 起义 官方封面"></div>
   <h1>沙丘：帝国 小助手</h1>
   <p class="tagline">准备不漏 · 冲突好算 · 终局不错</p>

@@ -262,3 +262,5 @@ label>input,label>select,label>textarea{margin-top:5px}
   .bar-title{display:none}
   .seg button{font-size:13px}
 }
+/* 写评价: opens this game's review form on the hub, then 返回 comes back here */
+.hero-nav{position:relative;z-index:1;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
