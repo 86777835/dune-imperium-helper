@@ -247,6 +247,13 @@ label>input,label>select,label>textarea{margin-top:5px}
 .cm{font-size:14px;padding:10px 12px;border-radius:12px;background:#fff;overflow-wrap:anywhere}
 .cm.u{background:#f0dcb6}
 .cm.err{color:#a02d24}
+/* answers from a web search: a label on top, sources underneath */
+.cweb{margin:-2px 0 6px;padding:5px 8px;border-radius:7px;background:var(--sand2);font:500 12px/1.5 var(--sans);color:var(--muted)}
+.cweb b{color:var(--spice)}
+.csrc{margin-top:8px;padding-top:6px;border-top:1px dashed var(--line);font:12px/1.5 var(--sans);color:var(--muted)}
+.csrc a{display:block;color:var(--night2);text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.csrc i{margin-left:6px;font-style:normal;color:var(--muted);opacity:.8}
+.cwait{display:block;margin-bottom:4px;font:500 12.5px var(--sans);color:var(--muted)}
 .sm{width:26px;height:26px}
 .typing{color:var(--muted)}
 

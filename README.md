@@ -12,6 +12,7 @@
 - `public/history.*`：自动存档，按主版本、模式、人数、扩展、玩家/领袖/房间码筛选，打开原房修订。
 - `tools/讲解稿.md`、`tools/faq.json`：10 节讲解、26 条 FAQ，版本标签与来源。`public/guide.*` 提供教程、搜索及过滤。旧简中勘误单列，无 PDF 页码明确注明。
 - `src/chat.js`、`src/sse.js`、`public/chat.js`：本站讲解稿和 FAQ 限定问答，Flash → Workers AI Qwen → Pro；9 秒首个回答文字 / 8 秒中途停顿切换。只读匹兹堡 KV 检查状态，不创建 cron，不显示模型名。
+- 联网查找（2026-11-12，照匹兹堡移植）：讲解稿和 FAQ 里没有答案的沙丘规则问题，模型只回一行「【需联网】+英文搜索词」，服务器转去调 DeepSeek 搜索接口（`/v1/tools/search`，同一个密钥，6 秒超时；先只搜 BGG，不足 3 条再搜全网，最多 6 条），再让模型只依据摘要作答、用 [1] [2] 标出处。基础版和起义差别大，所以搜索词分版本：基础版以 `Dune Imperium` 开头，起义以 `Dune Imperium Uprising` 开头；总入口问答加在问题前的「（版本：基础版/起义）」会被识别。联网回答要指出摘要属于哪个版本，版本对不上的不能当成本版规则；玩家没说版本时分别说明。页面在这类回答上方固定显示「本站资料没有这一条，以下来自网上讨论，本站未核对」，下面列来源链接；搜不到或搜索失败就明说，不编。无关问题不联网。每次联网在日志里记一条 `chat web search`，用来核对后补进 FAQ。
 - `public/img/`：出版社提供的平面盒封与 Codex 生成的原创教程图；来源见 `docs/素材来源.md`。
 
 只输入实物已计算的最终战力；不模拟卡牌、兵力、自动对手、资源钱包或自动战斗。单/双人有说明、官方 companion 入口和结果录入。六人指挥官与盟友独立记录，最后按队合计。
@@ -26,7 +27,7 @@ wrangler dev --port 8911
 
 线上：https://dune.leisurecat.cloud（custom domain）；仓库 86777835/dune-imperium-helper。部署：`wrangler deploy`。
 
-规则助手密钥由用户自行设置：`wrangler secret put DEEPSEEK_API_KEY --name dune-imperium-helper`。无密钥时返回明确错误。联网模型的实际可用性本次不验证。
+规则助手密钥由用户自行设置：`wrangler secret put DEEPSEEK_API_KEY --name dune-imperium-helper`。无密钥时返回明确错误。
 
 ## 测试
 
@@ -42,6 +43,8 @@ node tests/test_nav.mjs
 node tests/test_review.mjs
 node tests/test_preselect.mjs
 node tests/test_chat.mjs http://localhost:8911/ /tmp/claude-501/codex_tasks/shots --no-key
+# 联网查找：wrangler dev 改加 --var DEEPSEEK_API_KEY:fake --var DEEPSEEK_BASE:http://127.0.0.1:8912 --var CHAT_CF_MODEL:@cf/none/missing
+node tests/test_chat.mjs http://localhost:8911/ /tmp/claude-501/codex_tasks/shots --mock-web
 rm node_modules
 ```
 
