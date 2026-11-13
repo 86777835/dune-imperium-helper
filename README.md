@@ -9,6 +9,7 @@
 - `public/app.js`、`index.html`、`style.css`：手机界面、DOM morph、表单草稿、WebSocket 同步、主持人推进、每人终局核对、代填、结算长图和评价。
 - `src/worker.js`：Room / Lobby / Archive Durable Objects，服务端权威 reduce 与版本号校验。房间凭四位码访问；主持凭据留在创建手机，不发给其他连接。进入未认领的房间的第一台手机取得主持权。
 - 版本预选：总入口的盒子链到 `/?v=base` 或 `/?v=uprising`，从这里建的房间直接选好对应版本，进房后地址栏去掉 `v`。测试见 `tests/test_preselect.mjs`。
+- `public/teach.*`（2026-11-13）：「N 分钟讲规则」，带新人快速开局。顶部切换基础版 / 起义（基础版约 5 分钟、起义约 6 分钟）：从总入口带 `?v=` 进来按版本打开，否则用这台手机上次的选择。8 段主流程，重要要素各一句；术语点开看图和注释；「问」按钮把问题连同「（版本：…）」发给规则助手（`chat.js` 的 `window.askRules`）。主流程后是注意事项（基础版 16 条、起义 20 条），每条写好答案，依据 `tools/faq.json` 和规则书。图片在 `public/img/teach/`，截自 Dire Wolf 官方简中规则书，坐标见 `tools/teach_crops.py`。首页「创建新房间」下方是入口卡片。
 - `public/history.*`：自动存档，按主版本、模式、人数、扩展、玩家/领袖/房间码筛选，打开原房修订。
 - `tools/讲解稿.md`、`tools/faq.json`：10 节讲解、26 条 FAQ，版本标签与来源。`public/guide.*` 提供教程、搜索及过滤。旧简中勘误单列，无 PDF 页码明确注明。
 - `src/chat.js`、`src/sse.js`、`public/chat.js`：本站讲解稿和 FAQ 限定问答，Flash → Workers AI Qwen → Pro；9 秒首个回答文字 / 8 秒中途停顿切换。只读匹兹堡 KV 检查状态，不创建 cron，不显示模型名。
@@ -42,6 +43,7 @@ node tests/test_room.mjs
 node tests/test_nav.mjs
 node tests/test_review.mjs
 node tests/test_preselect.mjs
+node tests/test_teach.mjs http://localhost:8911/ /tmp/claude-501/codex_tasks/shots   # 只模拟 /api/chat，也可以对线上跑
 node tests/test_chat.mjs http://localhost:8911/ /tmp/claude-501/codex_tasks/shots --no-key
 # 联网查找：wrangler dev 改加 --var DEEPSEEK_API_KEY:fake --var DEEPSEEK_BASE:http://127.0.0.1:8912 --var CHAT_CF_MODEL:@cf/none/missing
 node tests/test_chat.mjs http://localhost:8911/ /tmp/claude-501/codex_tasks/shots --mock-web

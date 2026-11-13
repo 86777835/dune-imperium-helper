@@ -91,6 +91,7 @@ function landing(){
    <div class="or"><span>或输入房间码加入</span></div>
    <form id="join" class="join"><label class="sr-only" for="joinCode">房间码</label><input id="joinCode" maxlength="4" placeholder="房间码" autocapitalize="characters" autocomplete="off" required><button class="dark">加入</button></form>
   </div>
+  <a class="card teachgo" href="/teach${want?'?v='+want:''}"><span class="tg-i">讲</span><span><b>第一次玩？${want==='base'?5:want==='uprising'?6:'5～6'} 分钟讲规则</b>照着念就能开局，不懂的词点一下</span><i>›</i></a>
   <div class="tiles">
    <a class="tile" href="/guide.html">${ICON.book}<span><b>新手教程</b><small>教程 + 常见问题</small></span></a>
    <a class="tile" href="/history.html">${ICON.scroll}<span><b>往期对局</b><small>战绩与存档</small></span></a>
